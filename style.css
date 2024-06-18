@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+
+:root{
+    --clr-primary: #fe5722
+    --clr-secondary: #272d36
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", "Helvetica;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+    color: var(--clr-primary);
+    overflow-x: hidden;
+}
+
+.section{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 0 30px;
+}
+
+.primary{
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.secondary{
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.tertiary{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.btn{
+    padding: 14px 20px;
+    background: var(--clr-primary);
+    border-radius: 4px;
+    color: #080cff;
+    text-decoration: none;
+    font-size: 30px;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+/* menu */
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #fff5f2;
+    box-shadow: 0 1px 1px -1px rgba(0,0,0,0.22);
+    z-index: 22;
+}
+
+label.logo{
+    color: red;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 30px;
+    font-weight: 700;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+nav ul li a{
+    font-size: 18px;
+    padding: 7px 13px;
+    text-decoration: none;
+    color: var(--clr-secondary);
+}
+nav ul li a:hover{
+    color: rgb(247, 0, 255);
+}
+
+.menu a.active, .menu a:hover{
+    border-bottom: 2px solid  var(--clr-primary);
+    transition: 0.3s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* end menu */
+
+/* hero section */
+
+#hero-section{
+    background: #fff5f2;
+    margin-top: 60px;
+}
+
+.text, .visual{
+    width: 50%;
+}
+
+.text{
+    margin: 0 20px;
+}
+
+
+
+.visual img{
+    width: 80%;
+    height: auto;
+    display: block;
+}
+
+#hero-section .text{
+    margin-left: 30px;
+}
+
+#hero-section .visual img{
+    margin-left: auto;
+}
+
+/* end hero section */
+
+/* how it works */
+
+
+#how-it-works{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box{
+    border: 2px solid #b2b2b2;
+    padding: 25px 5px;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: serif;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.box ion-icon{
+    font-size: 35px;
+    color: #fe5722;
+    margin: 15px 0;
+}
+
+.box:hover, .box:active{
+    background: #2d8a8d;
+    color: #fff;
+    border-color: #2188b8;
+}
+
+/* End how it works */
+
+/* About */
+
+#about .visual img, #app .visual img{
+    margin-right: auto;
+}
+.text h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(240, 9, 78);
+    font-weight: 600;
+}
+.text p{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* end about */
+
+/* Restaurant menu starts */
+
+.category{
+    list-style: none;
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.category li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.category li:active{
+    color: #ff3c00;
+}
+
+.restaurant-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-item{
+    width: 260px;
+    margin: 0 auto;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.menu-item img{
+    width: 100%;
+}
+
+.order{
+    justify-content: space-between;
+}
+
+.btn-menu{
+    padding: 6px 10px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #58abc4;
+    border: 1px solid #3128b1;
+    color: #f8f8f8;
+}
+.btn-menu:hover{
+    color: #44646e;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 8px 0;
+}
+
+.location{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* end restaurnat menu */
+
+/* testimonial section starts */
+
+#testimonial .visual img{
+    margin-left: auto;
+}
+
+.user{
+    margin-top: 30px;
+    justify-content: start;
+}
+
+.user img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* end testimonial */
+
+/* faq sections starts */
+
+#faq .secondary{
+    text-align: center;
+}
+
+.faq{
+    width: 60%;
+    margin: 50px auto 20px auto;
+}
+
+summary{
+    padding: 1em;
+    border: 1px solid #b2b2b2;
+    margin-bottom: 1em;
+    cursor: pointer;
+    outline: none;
+    border-radius: 0.3em;
+    font-size: 15px;
+    font-weight: 700;
+}
+.content p{
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 600;
+    font-family:  sans-serif;
+}
+
+details[open] summary ~ * {
+    animation: open 1s ease-in-out;
+}
+
+@keyframes open{
+    from{
+        opacity: 1;
+        margin-top: -10px;
+    }
+    top{
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+/* faq end */
+
+/* app section starts */
+
+#app{
+    text-align: center;
+}
+
+.app-store{
+    background: #000;
+    margin: 0 10px;
+    padding: 4px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.app-store p{
+    margin-top: 8px;
+}
+
+.app-store span{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.app-store ion-icon{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.download{
+    margin: 30px 0;
+}
+
+/* end app */
+
+.copyright{
+    text-align: center;
+    background-color: #272d36;
+    padding: 20px 0;
+    margin-top: 30px;
+    color: #fff5f2;
+    border-top: 1px solid #b2b2b2;
+}
+
+
